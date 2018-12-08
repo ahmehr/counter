@@ -31,20 +31,20 @@ namespace CounterApi.Controllers
         [HttpGet]
         public int Get()
         {
-            return Globals.Counter;
+              return Globals.Counter;
         }
         //* Put Method Incerement The Counter by Requqsted Rate in Query String in Url *\\
         [HttpPut]
         public string Put([FromQuery] int inc)   
         {
-            Globals.SetGlobalInt( Globals.Counter + inc);
-            return Globals.Counter.ToString();
+              Globals.SetGlobalInt( Globals.Counter + inc);
+              return Globals.Counter.ToString();
         }
         //* Post Method Reset The Counter *\\
         [HttpPost]
         public void Reset()
         {
-            Globals.SetGlobalInt(0);
+              Globals.SetGlobalInt(0);
         }
     }
 }

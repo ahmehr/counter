@@ -26,7 +26,7 @@ namespace CounterApi
                     .AllowAnyHeader()
                     .AllowAnyOrigin()
                    );
-            });  
+            });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
